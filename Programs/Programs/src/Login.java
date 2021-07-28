@@ -4,14 +4,20 @@ import java.util.*;
 
 public class Login{
     public static void main(String [] args){
+        Scanner scan = new Scanner(System.in);
+
+        // Declare constants
         final String USERNAME = "admin";
         final String PASSWORD = "open";
 
-        Scanner scan = new Scanner(System.in);
+        // Collect user input
         System.out.println("Enter your username: ");
         String username = scan.next();
+
         System.out.println("Enter your password: ");
         String password = scan.next();
+
+        // Determine if the username and/or password is correct
         if (username.equals(USERNAME))
         {
             if (password.equals(PASSWORD))

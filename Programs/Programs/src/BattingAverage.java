@@ -1,11 +1,9 @@
-/* Batting Average
- *  Anderson, Franceschi
- *  This assignment was completed on 7/26/2021 by Tyler Brunette
- */
+// This assignment was completed on 7/26/2021 by Tyler Brunette
+
 import java.util.*;
-public class BattingAverage
-{
-    public static void main( String [] args ){
+
+public class BattingAverage{
+    public static void main(String [] args){
         Scanner scan = new Scanner(System.in);
 
         // Take in input values
@@ -13,7 +11,7 @@ public class BattingAverage
         double hits = scan.nextDouble();
 
         System.out.println( "Enter the number of at bats the batter has: " );
-        int atBats = scan.nextInt( );
+        int atBats = scan.nextInt();
 
         // Calculate Batting Average
         double battingAvg = hits / atBats;
